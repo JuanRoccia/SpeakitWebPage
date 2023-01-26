@@ -1,0 +1,584 @@
+@import url('http://fonts.cdnfonts.com/css/louis-george-cafe');
+@import url('http://fonts.cdnfonts.com/css/coolvetica-2?styles=46108,46109,46110,46112,46111&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/*TODO*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-display: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+  scroll-behavior: smooth;
+  }
+}
+
+/*CUERPO*/
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+
+/*CONTENIDO/TEXTO/*/
+.content  {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox {
+	margin-top: -100px;
+	position: relative;
+	max-width: 700px;
+}
+
+/* Texto home */
+.contentHome .textBoxHome{  
+  margin-top: -50px;
+}
+
+.content .textBox h2 {
+	color: #004ab2;
+	font-size: 3.5em;
+	line-height: 1.3em;
+	font-weight: 650;
+	/* font-family: 'Coolvetica', 'Louis George Café Light', 'Poppins'; */
+	font-family: 'Poppins';
+	/* letter-spacing: 2px;    */
+}
+
+li {
+    list-style-type: disc;
+    color: #00b0ff;
+    /* color: #004ab2;
+    color: #000d4d; */
+}
+
+/*CIRCULO*/
+#services .circle2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  	background: #004ab2;
+	clip-path: circle(600px at right 1250px);
+}
+
+/* Whatsapp icon */
+.whIcon {
+	z-index:100;
+	position: absolute;
+	left: 50%;	
+	display: flex;
+  	bottom: 15px;
+}
+
+.whIcon li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.whIcon li img:hover {
+	transform: translateY(-20px) scale(1.1);
+}
+
+.whIcon li img {
+	max-width: 100px;
+	cursor: pointer;
+	transition: 0.5s;
+	/* Inivertir y escalar */
+	transform: scale(0.9);
+	/* filter: invert(1); */
+}
+
+div.whIcon {
+	width: 100%;
+	position:fixed;
+}
+
+div.whIcon li img {
+  	position:fixed;
+	width:60px;
+	bottom:20px;
+	right: 30px;
+	float: right;
+	text-align:center;
+	z-index:100;
+}
+
+/* FOOTER */
+footer {
+	margin-top: 100px;
+	text-align: center;
+	padding: 3px;
+}
+
+
+/*
+	<=====================================>
+	<==========     Services	==========>
+	<=====================================>
+*/
+
+/* LOGO TEXTO */
+.nav h2 {
+	color: #004ab2;
+	font-size: 2.5em;
+	line-height: 1.1em;
+	font-weight: 650;
+}
+
+/* Speak */
+.nav h2 .speakServ {
+	font-family: 'Poppins';
+	letter-spacing: -2px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 900;
+	padding-bottom: 3%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* It */
+.nav h2 .itServ {
+	font-family: 'Poppins';
+	color: #ec1b4b;
+	font-size: 1em;
+	font-weight: 900;
+	white-space: nowrap;
+	overflow: hidden;
+	letter-spacing: 1px;
+}
+
+/* ANIMATION */
+@keyframes typing {
+	from { width: 0; }
+}
+
+@keyframes blink {
+	50% { border-color: transparent; }
+}
+
+/* SERVICES */
+i.fa.fa-graduation-cap {
+    padding: 0;
+}
+
+i.fa.fa-balance-scale {
+	padding: 0;
+}
+
+i.fa.fa-book {
+	padding: 0;
+}
+
+i.fa.fa-chart-bar {
+	padding: 0;
+}
+
+div.content2 {
+  	width: 100%;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  	/* margin-top: 8vw; */
+  }
+  
+div.articulo {
+  	position: relative;
+  	width: 100%;
+  	background: #fff;
+  	border-radius: 10px;
+  	padding: 50px;
+  	transition: 0.3s;
+  	opacity: 50%;
+  	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.141);
+  }
+
+/*PARAGRAPH*/
+.content2 .textBox p {
+  	margin-top: 5px;
+  	color: #00b0ff;
+	color: #004ab2;
+    font-size: 1.1em;
+    font-size: 20px;
+    font-weight: 410;
+  }
+
+.articulo:hover {
+  	opacity: 100%;
+  	box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+  }
+  
+.content2 .textBox a {
+  	transition: 1.5s;
+  }
+  
+.content2 .textBox a:hover {
+  	box-shadow: 0 8px 32px #004ab2;
+  	-moz-box-shadow: 0px 0px 5px #1e1e1e; 
+  	-webkit-box-shadow: 0px 0px 5px #1e1e1e;
+  	-webkit-transition: box-shadow 0.3s ease-in-out 0s;
+  	-moz-transition: box-shadow 0.3s ease-in-out 0s;
+  	-o-transition: box-shadow 0.3s ease-in-out 0s;
+  	-ms-transition: box-shadow 0.3s ease-in-out 0s;
+  	transition: box-shadow 0.3s ease-in-out 0s;
+  	color: #000d4d;
+  	transition: color .5s;
+  }
+  
+.articulo>i {
+  	font-size: 50px;
+  	color: #000d4d;
+  	display: inline-block;
+  	width: 70px;
+  	height: 70px;
+  	margin-left: 10px;
+  	padding-top: 20px;
+  	transition: 0.2s;
+  }
+  
+.articulo>h1 {	
+  	color: #000d4d;
+  	font-size: 30px;
+  }
+  
+.articulo>p {
+  	font-size: 20px;
+  	font-weight: 410;
+  	margin-top: 15px;
+  }
+  
+.articulo>a:hover {
+  	color: #00b0ff;
+  	transition: color .5s;
+  }
+
+/*Learn more*/
+.content2 .textBox a{
+	font-family: 'Poppins';
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #ec1b4b;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+/*
+	<=====================================>
+	<==========     Contact		==========>
+	<=====================================>
+*/
+
+/* ID de Service Section */
+#services {
+	display: block;
+	padding-bottom: 0;
+}
+
+.contentContact {margin-top: 70px;}
+
+.content .textBox a {
+	font-family: 'Poppins';
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #ec1b4b;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: 1.5s;
+}
+
+.content .textBox a:hover {
+	-moz-box-shadow: 0px 0px 5px #1e1e1e; 
+  	-webkit-box-shadow: 0px 0px 5px #1e1e1e; 
+	box-shadow: 0px 0px 5px #1e1e1e;
+	-webkit-transition: box-shadow 0.3s ease-in-out 0s;
+	-moz-transition: box-shadow 0.3s ease-in-out 0s;
+	-o-transition: box-shadow 0.3s ease-in-out 0s;
+	-ms-transition: box-shadow 0.3s ease-in-out 0s;
+	transition: box-shadow 0.3s ease-in-out 0s;
+}
+
+.content .textBox>a:hover {
+  color: #000d4d;
+  transition: color .5s;
+}
+
+/* Texto */
+.contentContact .textBoxContact h2 {
+	padding-top: 70px;
+	letter-spacing: -1px;
+}
+
+/*CONTENIDO/TEXTO/*/
+.contentContact  {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contentContact .textBoxContact {
+	margin-top: -100px;
+	position: relative;
+	max-width: 700px;
+}
+
+.contentContact .textBoxContact h2 {
+	color: #004ab2;
+	font-size: 3.5em;
+	line-height: 1.3em;
+	font-weight: 650;
+	font-family: 'Poppins';
+}
+
+/*PARAGRAPH*/
+.contentContact .textBoxContact p {
+	margin-top: 5px;
+	color: #004ab2;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+/* Contact */
+.contentContact .textBoxContact h2 .contact{
+  	color: #000d4d;
+	font-size: 1.2em;
+	font-weight: 900;
+	display: inline-block;
+	margin-bottom: -15px;
+	white-space: nowrap;
+	letter-spacing: -2px;
+}
+/* Us */
+.contentContact .textBoxContact h2 .us {
+  	color: #ec1b4b;
+	font-size: 1.1em;
+	font-weight: 900;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* FORMULARIO */
+label {
+	color: #004ab2;
+}
+
+#fname {
+	font-style: italic;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #000d4d;
+	border-radius: 4px;
+	transition: 1.5s;
+}
+
+#fname:focus {
+	border: 3px solid #004ab2;	
+}
+
+#email {
+	font-style: italic;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #000d4d;
+	border-radius: 4px;
+	transition: 1.5s;
+}
+
+#email:focus {
+	border: 3px solid #004ab2;	
+}
+
+.form-control {
+	color: #004ab2;
+	font-style: italic;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #000d4d;
+	border-radius: 4px;
+	transition: 1.5s;
+}
+
+.form-control:focus {
+	border: 3px solid #004ab2;	
+}
+
+#submit {
+	color: #004ab2;
+	font-style: italic;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ec1b4b;
+	border-radius: 4px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #004ab2;
+	opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #004ab2;
+  }
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #004ab2;
+}
+
+/* Content */
+.contentContact {
+	display: flex;
+	display: block;
+}
+
+.imgBoxContact {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+img.speakitContact {
+	width: 100%;
+	max-width: 500px;
+}
+
+/*
+	<=====================================>
+	<========= Responsive Design =========>
+	<=====================================>
+*/
+
+/*Breakpoint at 570px*/
+@media screen and (max-width: 570px) {
+
+	section#services.services {
+		padding: 50px;
+	}
+
+    div.articulo {
+		padding: 40px;
+	}
+}
+
+/* Breakpoint at 480px */
+@media screen and (max-width: 440px) {
+
+	div.articulo {
+		padding: 40px;
+		/* margin: 0vw -30vw 10vw 0px; */
+	}
+
+    section#services.services {
+		padding: 30px;
+	}
+}
+
+/* Breakpoint at 325 px */
+@media screen and (max-width: 360px) {
+
+	div.articulo {
+		padding: 30px;
+		/* margin: 0vw -30vw 10vw 0px; */
+	}
+
+    section#services.services {
+		padding: 20px;
+	}
+}
+
+/*
+	<=====================================>
+	<======== Contact responsive  ==========>
+	<=====================================>
+*/
+	
+/* Breakpoint at 800px */
+@media screen and (max-width: 800px) {
+
+	.contentContact .textBoxContact h2 {
+		color: #00b0ff;
+		font-size: 2.5em;
+		margin-bottom: 15px;
+	}
+
+	.contentContact .textBoxContact {
+		max-width: 100%;
+	}
+}
+
+/* Breakpoint 600px */
+@media screen and (max-width: 600px) {
+
+	.contentContact .textBoxContact h2 {
+		padding-top: 50px;
+	}
+}
+
+/* Breakpoint 500px */
+@media screen and (max-width: 500px) {
+
+	.imgBoxContact {
+		width: 70%;
+	}
+}
+
+/* Breakpoint 400px */
+@media screen and (max-width: 400px) {
+
+	.sci3 {
+		margin-top: 0px;
+	}
+
+	/* texto "esperamos tener.. contac us" */
+	.contentContact .textBoxContact h2 {
+		font-size: 2.5em;
+	}
+
+	.imgBoxContact {
+		width: 80%;
+	}
+}
+
+/* Brekpoint 300 */
+@media screen and (max-width: 300px) {
+
+	/* texto "esperamos tener.. contac us" */
+	.contentContact .textBoxContact h2 {
+		font-size: 2em;
+	}
+}
